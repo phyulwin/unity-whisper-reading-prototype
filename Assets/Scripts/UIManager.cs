@@ -66,6 +66,7 @@ public class UIManager : MonoBehaviour
             if (sentenceText != null)
             {
                 sentenceText.text = text;
+                sentenceText.ForceMeshUpdate();
             }
         }
         catch (Exception ex)

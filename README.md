@@ -2,16 +2,76 @@
 
 ![](/Assets/Resources/screenshot1.png)
 
-A standalone Unity 2D speech-reading prototype built to test real-time word recognition using the Whisper speech-to-text pipeline. The application loads story text, breaks it into readable sentences, and guides the player through each word sequentially with live visual feedback.
+A standalone Unity 2D speech-reading prototype for testing real-time word recognition using the Whisper speech-to-text pipeline.
 
-Users read the displayed sentence aloud, and recognized words are validated against the current target word. Correct words are highlighted in green, skipped words turn red, and the underline advances automatically as progression continues. A live scoring dashboard tracks total words, correct reads, skipped words, and completion percentage.
+The application loads text content, parses it into sentences, and guides the user through each word sequentially with live feedback.
 
-The system follows a modular architecture with dedicated managers for text loading, speech capture, word tracking, scoring, and UI orchestration, making it easy to scale into future narrative or educational reading experiences.
+As the user reads aloud:
 
-This repository is intended as an isolated prototype environment for validating Unity microphone streaming, Whisper integration, and real-time reading UX workflows before production migration.
+* Recognized words are validated against the current target word
+* Correct words are highlighted in green
+* Skipped or incorrect words are marked in red
+* The underline advances automatically as progression continues
 
-This prototype builds on the open-source **whisper.unity** package for Unity-based speech recognition, which provides the Whisper model integration and transcription pipeline used for microphone streaming and live text processing. Credit to the original package and contributors for the foundational STT infrastructure that enabled this prototype workflow:
+A live dashboard tracks:
+
+* Total words
+* Correct reads
+* Skipped words
+* Completion percentage
+
+---
+
+## Architecture
+
+The system is built with a modular structure, separating core responsibilities into dedicated components:
+
+* Text Loading
+* Speech Capture
+* Word Tracking
+* Scoring
+* UI Orchestration
+
+This makes the prototype easy to extend into larger narrative or educational applications.
+
+---
+
+## Purpose
+
+This repository is an isolated prototype environment designed to validate:
+
+* Unity microphone streaming
+* Whisper integration
+* Real-time reading UX workflows
+
+It serves as a testing ground before moving into production.
+
+---
+
+## Whisper Integration
+
+This project builds on the open-source **whisper.unity** package, which provides the underlying Whisper model integration and transcription pipeline used for microphone streaming and real-time text processing.
+
+Credit to the original contributors for the foundational STT infrastructure.
 
 ![](/Assets/Resources/screenshot2.png)
 
-To update the reading content, navigate to Assets/Resources/SampleText.txt and replace the existing text with your new story, dialogue, or sentence set. The loader automatically reads from this file at runtime, parses the content into sentences, and updates the reading flow without requiring any code changes.
+---
+
+## Updating Reading Content
+
+To modify the reading content:
+
+```
+Assets/Resources/SampleText.txt
+```
+
+Replace the file contents with your desired text (story, dialogue, or sentence set).
+
+The system will automatically:
+
+* Load the file at runtime
+* Parse it into sentences
+* Update the reading flow
+
+No code changes required.

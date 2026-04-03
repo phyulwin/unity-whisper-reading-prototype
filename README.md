@@ -20,31 +20,10 @@ A live dashboard tracks:
 * Skipped words
 * Completion percentage
 
----
 
-## Architecture
+### Demo Video (YouTube)
 
-The system is built with a modular structure, separating core responsibilities into dedicated components:
-
-* Text Loading
-* Speech Capture
-* Word Tracking
-* Scoring
-* UI Orchestration
-
-This makes the prototype easy to extend into larger narrative or educational applications.
-
----
-
-## Purpose
-
-This repository is an isolated prototype environment designed to validate:
-
-* Unity microphone streaming
-* Whisper integration
-* Real-time reading UX workflows
-
-It serves as a testing ground before moving into production.
+[![Watch the demo on YouTube](https://img.youtube.com/vi/gigwffJc1PA/hqdefault.jpg)](https://youtu.be/gigwffJc1PA?si=gMmWmtmCd08HOleH)
 
 ---
 

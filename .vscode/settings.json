@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "unity-whisper-reading-prototype.sln"
+    "dotnet.defaultSolution": "unity-whisper-reading-prototype.slnx"
 }
